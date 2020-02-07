@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Unica+One&display=swap');
+body {
+    font-family: 'Unica One';
+    margin: 0;
+}
+#mid {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
+    font-size: 10em;
+    opacity: 0;
+    animation: show .5s forwards .5s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#links a {
+    padding: .5em;
+}
+#links {
+    opacity: 0;
+    animation: show .5s forwards .6s;
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: translate(0, -20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, -60px);
+    }
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#links {
+    font-size: 2em;
+    margin-bottom: -2em;
+}
